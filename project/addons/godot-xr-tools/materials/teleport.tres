@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ceu21ibocsokq"]
+
+[ext_resource type="Shader" path="res://addons/godot-xr-tools/materials/teleport.gdshader" id="1"]
+
+[resource]
+render_priority = 0
+shader = ExtResource( "1" )

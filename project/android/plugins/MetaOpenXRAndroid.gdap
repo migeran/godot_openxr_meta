@@ -1,0 +1,7 @@
+[config]
+
+name="MetaOpenXRAndroid"
+binary_type="local"
+binary="MetaOpenXRAndroid/metaopenxrandroid/build/outputs/aar/metaopenxrandroid-debug.aar"
+
+[dependencies]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp1w8qmqbqe41"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_yxygs"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_o1wyt"]
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmwb8"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_yxygs")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+
+[node name="FloorMesh" type="MeshInstance3D" parent="XROrigin3D"]
+mesh = SubResource("PlaneMesh_o1wyt")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_dmwb8")
