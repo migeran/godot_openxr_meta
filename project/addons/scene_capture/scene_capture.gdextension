@@ -14,8 +14,8 @@ linux.debug.arm64 = "res://addons/scene_capture/bin/libscene_capture.linux.templ
 linux.release.arm64 = "res://addons/scene_capture/bin/libscene_capture.linux.template_release.arm64.so"
 linux.debug.rv64 = "res://addons/scene_capture/bin/libscene_capture.linux.template_debug.rv64.so"
 linux.release.rv64 = "res://addons/scene_capture/bin/libscene_capture.linux.template_release.rv64.so"
-android.debug.arm64-v8a = "res://addons/scene_capture/bin/libscene_capture.android.template_debug.arm64.so"
-android.release.arm64-v8a = "res://addons/scene_capture/bin/libscene_capture.android.template_release.arm64.so"
+android.template_debug.arm64-v8a = "res://addons/scene_capture/bin/libscene_capture.android.template_debug.arm64.so"
+android.template_release.arm64-v8a = "res://addons/scene_capture/bin/libscene_capture.android.template_release.arm64.so"
 
 [dependencies]
 
@@ -29,5 +29,5 @@ linux.debug.arm64 = []
 linux.release.arm64 = []
 linux.debug.rv64 = []
 linux.release.rv64 = []
-android.debug.arm64-v8a = []
-android.release.arm64-v8a = []
+android.template_debug.arm64-v8a = []
+android.template_release.arm64-v8a = []

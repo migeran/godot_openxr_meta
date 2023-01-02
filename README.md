@@ -8,6 +8,12 @@ The scene_capture addon implements an extension wrapper for the XR_FB_scene_capt
 scons oculus_sdk_path=/path/to/ovr_openxr_mobile_sdk/
 ```
 
+To build the extension for Android, the following commands need to be run:
+```
+export ANDROID_NDK_ROOT=/path/to/android/ndk
+scons oculus_sdk_path=/path/to/ovr_openxr_mobile_sdk/ platform=android
+```
+
 After installing the Android build templates, the MetaOpenXRAndroid plugin also needs to be built:
 
 ```

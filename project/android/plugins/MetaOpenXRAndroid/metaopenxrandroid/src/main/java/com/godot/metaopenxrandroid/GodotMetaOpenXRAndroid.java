@@ -16,7 +16,7 @@ public class GodotMetaOpenXRAndroid extends org.godotengine.godot.plugin.GodotPl
     }
 
     @Override
-    protected Set<String> getPluginGDNativeLibrariesPaths() {
-        return super.getPluginGDNativeLibrariesPaths();
+    protected Set<String> getPluginGDExtensionLibrariesPaths() {
+        return super.getPluginGDExtensionLibrariesPaths();
     }
 }
