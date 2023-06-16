@@ -39,7 +39,7 @@ android {
 dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
-    compileOnly files('../../../build/libs/debug/godot-lib.template_debug.aar')
+    compileOnly files('../../../build/libs/release/godot-lib.template_release.aar')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

@@ -17,9 +17,9 @@ class OpenXRFbSceneCaptureExtensionWrapper : public OpenXRExtensionWrapperExtens
 	GDCLASS(OpenXRFbSceneCaptureExtensionWrapper, OpenXRExtensionWrapperExtension);
 
 public:
-	godot::Dictionary _get_request_extensions() override;
+	godot::Dictionary _get_requested_extensions() override;
 
-	void _on_instance_created(int64_t instance) override;
+	void _on_instance_created(uint64_t instance) override;
 
 	void _on_instance_destroyed() override;
 

@@ -43,7 +43,7 @@ void OpenXRFbSceneCaptureExtensionWrapper::cleanup() {
 	fb_scene_capture_ext = false;
 }
 
-godot::Dictionary OpenXRFbSceneCaptureExtensionWrapper::_get_request_extensions() {
+godot::Dictionary OpenXRFbSceneCaptureExtensionWrapper::_get_requested_extensions() {
 	godot::Dictionary result;
 	for (auto ext: request_extensions) {
 		godot::String key = ext.first;
@@ -53,7 +53,7 @@ godot::Dictionary OpenXRFbSceneCaptureExtensionWrapper::_get_request_extensions(
 	return result;
 }
 
-void OpenXRFbSceneCaptureExtensionWrapper::_on_instance_created(int64_t instance) {
+void OpenXRFbSceneCaptureExtensionWrapper::_on_instance_created(uint64_t instance) {
 	if (fb_scene_capture_ext) {
 		bool result = initialize_fb_scene_capture_extension((XrInstance)instance);
 		if (!result) {

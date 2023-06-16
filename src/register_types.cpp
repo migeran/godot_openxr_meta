@@ -26,9 +26,9 @@ void scene_capture_terminate(ModuleInitializationLevel p_level)
 
 extern "C"
 {
-	GDExtensionBool GDE_EXPORT scene_capture_init(const GDExtensionInterface *p_interface, const GDExtensionClassLibraryPtr p_library, GDExtensionInitialization *r_initialization)
+	GDExtensionBool GDE_EXPORT scene_capture_init(GDExtensionInterfaceGetProcAddress p_get_proc_address, GDExtensionClassLibraryPtr p_library, GDExtensionInitialization *r_initialization)
 	{
-		godot::GDExtensionBinding::InitObject init_obj(p_interface, p_library, r_initialization);
+		godot::GDExtensionBinding::InitObject init_obj(p_get_proc_address, p_library, r_initialization);
 
 		init_obj.register_initializer(scene_capture_initialize);
 		init_obj.register_terminator(scene_capture_terminate);
